@@ -1,0 +1,509 @@
+*{
+  color: white;
+}
+.titulo h1{
+   color: black;
+   text-align: center;
+}
+.row-product{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+
+}
+.new-products {
+   margin:8px;
+   width: 250px;
+   padding-bottom: 20px;
+   height: 350px;
+   background: green;
+   overflow: hidden;
+   border-radius: 10px 10px 10px 10px;
+   transform: scale(0.95);
+   transition: box-shadow 0.5s, transform 0.5s;
+}
+.new-products:hover {
+   transform: scale(1); /*Tamaño box*/
+   box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);/*Sombra box*/
+}
+.size-product {
+   width:100%;
+   height:100%;
+   text-align: center;
+}
+.product{
+   height: 77%;
+   width: 100%;
+}
+.size-img{
+   width: 100%;
+   height:100%;
+}
+.details-product {
+   background: green;
+   width: 140px;
+   height: 140px;
+   position: absolute;
+   top: -70px;
+   right: -70px;
+   border-radius: 0px 0px 200px 200px;
+   transition: all 0.5s, border-radius 2s, top 1s;
+   overflow: hidden;
+}
+.icon {
+   position: absolute;
+   right: 85px;
+   top: 85px;
+   color: white;
+   opacity: 1;
+}
+.details-product:hover {
+   width: 100%;
+   right: 0;
+   top: 0;
+   border-radius: 0;
+   height: 74%;
+}
+.details-product:hover .icon {
+   opacity: 0;
+   right: 15px;
+   top: 15px;
+}
+ .details-product:hover .contents {
+   opacity: 1;
+   transform: translateY(0);
+}
+.contents {
+   opacity: 0;
+   transform: scale(0.5);
+   transform: translateY(-200%);
+   transition: opacity 0.2s, transform 0.8s;
+}
+.enlaces{
+  text-align: center;
+}
+.enlaces a{
+   text-decoration: none;
+}
+.enlaces a input{
+   background: lightblue;
+   border: solid 2px blue;
+}
+/***************************************************************HASTA ACA PRODUCTOS********************************/
+
+body{
+  margin: 0;
+  background-image: url(../IMG/icon/fondo.jpg);
+}
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+.logo{
+  padding-left: 50px;
+  width: 200px;
+  height: 115px
+}
+
+.icon_tam{
+  border-radius: 100%;
+  width:55px;
+  height:55px;
+  padding: 3px
+}
+.icon_tam:hover{
+  transform: scale(1.20);
+}
+.RedesSociales{
+  display: flex;
+  padding-top: 2%;
+}
+.icon-search{
+  float: right;
+  padding: 4px;
+  margin-top: 8px;
+  background: white;
+  cursor: pointer;
+  width: 25px;
+  height: 24px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.icon-search:hover {
+  background-color: #D3CDCD;
+}
+.box-search {
+  padding-top: 2.5%;
+}
+.box-search input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border: none;
+  color: black;
+}
+
+.nav_button{
+  display: flex;
+  background-color: #616A6B;
+  justify-content: center;
+}
+.boton{
+padding: 15px 32px;
+background-color: #616A6B;
+color: white;
+text-decoration: none;
+font-size: 16px;
+cursor: pointer;
+font-family: Arial;
+}
+.boton:hover {
+  background-color: gray;
+}
+/*******************************************************Hasta aca Cabecera*******************************/
+footer {
+   background-color: gray;
+}
+
+footer .art {
+   background-color: black;
+   padding: 16px;
+   padding-top: 48px;
+   clip-path: polygon(0% 5%, 15% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+footer   .content {
+   max-width: 1080px;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 16px;
+}
+footer header{
+   font-size: 21px;
+   padding-block:16px;
+
+}
+footer .content a {
+   display: block;
+   padding-block:12px;
+   color: white;
+   opacity: 0.65;
+}
+footer .content a:hover {
+   opacity: 1;
+   color: yellow;
+   font-size: 18px;
+}
+footer input {
+   border-style: solid;
+   line-height: 24px;
+   padding: 12px 16px;
+   font-size: 1rem;
+   width: 100%;
+   margin-block: 8px;
+   border-radius: 8px;
+   border-width: 2px;
+}
+footer input[type="email"]    {
+   background-color: transparent;
+   border-color: white;
+   color: white;
+}
+footer input[type="email"]:hover,
+footer input[type="email"]:focus {
+   border-color: yellow;
+   color: yellow;
+}
+footer input[type="submit"]{
+   background-color: white;
+   color: #0E6653;
+   text-transform: uppercase;
+   border: none;
+}
+footer   input[type="submit"]:hover{
+   background-color: yellow;
+}
+footer .Social1{
+   margin-block: 16px;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-gap: 16px;
+}
+footer .Social1 i{
+   font-size: 32px;
+   padding: 12px;
+   text-align: center;
+   border:  1px solid #0E6653;
+   border-radius: 8px;
+   width: 100%;
+}
+footer .Social1 i:hover{
+   color: yellow;
+   border-color: yellow; 
+   box-shadow: 0px 0px 16px inset #0E6653;
+}
+.tamaño{
+   border-radius: 100%;
+   width:30px;
+   height: 30px;
+}
+footer .noticia{
+   text-align: center;
+   padding: 24px;
+}
+footer .noticia strong{
+   color: yellow;
+   text-transform: uppercase;
+}
+/***********************************************HASTA ACA PIE*********************************************/
+.nov{
+  display: flex;  
+}
+.nov-col1{
+  margin: 5px;
+    padding: 10px;
+  border-radius: 1rem;
+  height: 515px;
+  width: 825px;
+}
+.nov-col2{
+  margin: 5px;
+    padding: 10px;
+  border-radius: 1rem;
+  height: 240px;
+  width: 450px;
+}
+
+.title {
+  color: black;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 40px;
+}
+.btn-product {
+  background-color: #526BBC;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;  
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.btn-product:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+.container {
+  position: absolute;
+  cursor: pointer;
+  margin-left: 300px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #999
+
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  transform: scale(1.20);
+  
+}
+
+/* When the radio button is checked, add a blue background */
+input:checked ~ .checkmark {
+  background-color: brown;
+  transform: scale(1.20);
+  }
+.center{
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 370px;
+}
+.pos-btn1{
+  left: 0px;
+}
+.pos-btn2{
+  left: 30px;
+  
+}
+.pos-btn3{
+  left: 60px;
+  
+}
+.pos-btn4{
+  left: 90px;
+}
+.pos-btn5{
+  left: 120px;
+}
+/*******************************************************HASTA ACA ESTILO************************************/
+.container-registrate{
+  display: flex;
+  height: 73vh;
+}
+.registrate{
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 30px;
+}
+.col1{
+  width: 50%;
+  text-align: center;
+
+}
+.col2{
+  text-align: center;
+  width: 50%;
+  background-color: #939597;
+  color: white;
+}
+.input{
+    background-color: #fff;
+    border-color: #dbdbdb;
+    color: #363636;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.button_send {
+    background-color: #28A745;
+    border-color: transparent;
+    color: white;
+    cursor: pointer; 
+    transform: scale(1.30);
+}
+.button_send:hover {
+  transform: scale(1.40);
+}
+/*******************************************HASTA ACA GARANTIA********************************************/
+.h1{
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+color: #ffffff; 
+font-size: 50px; 
+font-weight: 600; 
+text-align: center; 
+background: #889ccf; 
+margin: 0 0 25px; 
+overflow: hidden; 
+padding: 20px; 
+border-radius: 20px 0px 20px 0px; 
+-moz-border-radius: 20px 0px 20px 0px; 
+-webkit-border-radius: 20px 0px 20px 0px; 
+border: 8px solid black;}
+
+.h2{
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+color: #000000; 
+font-size: 25px; 
+font-weight: 200; 
+text-align: center; 
+background: #889ccf; ; 
+overflow: hidden;
+
+
+   
+}
+
+.slide-contenedor{
+  max-width: 100%;
+  max-height: 100vh;
+  width: 100%;
+  height: center;
+  position: center;
+  overflow: hidden;
+}
+
+
+.miSlider img {
+
+  width: 25%;
+  max-height: 100vh;
+  height: auto;
+  position: center;
+  object-fit: cover;
+  transition: 2s;
+  display: block;
+  margin: auto;
+
+}
+.direcciones{
+  width: 100%;
+  height: 100%;
+  position: center;
+  top:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+
+
+}
+
+.direcciones a{
+  color: #070A5C;
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+ 
+}
+
+.direcciones a:hover{
+  background: rgba(0,0,0,.5);
+  transition: .5s;
+
+}
+
+.barras{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+
+
+}
+
+.barra{
+  cursor: pointer;
+  height: 2px;
+  width: 25px;
+  margin: 0 2px;
+  background: #000000;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+.active{
+  background-color: #FF0000;
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+  
+}
+@keyframes fade {
+    from{opacity:.4;}
+    to{opacity:1; }
+  }
